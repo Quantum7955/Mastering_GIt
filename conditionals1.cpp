@@ -36,9 +36,9 @@ printf("Num3: %d, Step: %d\n", num3, result3);
 
 
 
-int a[] = {1,2,3,4};
+int a[] = {1,2,3,4,5};
 
-for(int i = 0; i < 4; i++)
+for(int i = 0; i < 5; i++)
 {
 	printf("%d\n", a[i]);
 }
