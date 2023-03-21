@@ -7,6 +7,11 @@ int random_int(int max)
 		return rand() % max;
 }
 
+void init_rand(void)
+{
+	srand(time(NULL));
+}
+
 int main(int argc, char *argv[])
 {
 	
@@ -18,7 +23,7 @@ if(argc != 2)
 
 int max = atoi(argv[1]);
 
-srand(time(NULL));
+init_rand();
 int result = random_int(max);
 printf("%d\n", result);
 
